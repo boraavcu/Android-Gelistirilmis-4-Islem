@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <!-- Bora Avcu 2021707008 DEÜ İMYO Bilgisayar Programcılığı 2.Sınıf Örgün Öğretim -->
+    <EditText
+        android:id="@+id/ilksayiedit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="1. Sayıyı Girin"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/ikincisayiedit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="2. Sayıyı Girin"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/toplamabtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/cikarmabtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/carpmabtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/bolmebtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/temizlebtn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Temizle" />
+
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/Radiolar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiobtn1"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:text="1 --> 2" />
+
+
+        <RadioButton
+            android:id="@+id/radiobtn2"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:text="2 --> 1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sonuctxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:hint="Sonuç"
+        android:textSize="18sp" />
+
+</LinearLayout>
